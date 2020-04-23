@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JQuery对象和DOM对象的相互转换</title>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+function showName()
+{
+	var $name=$("#username");
+	alert($name.val());
+	var name=$name[0];
+	alert(name.value);
+	var name2=$name.get(0);
+	alert(name2.value);
+}
+function showname()
+{
+	var name=document.getElementById("username");
+	alert(name.value);
+	var $name=$(name);
+	alert($name.val());
+}
+</script>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  用户名：
+  <label>
+  <input type="text" name="username" id="username" />
+  </label>
+  <p>
+    <input type="button" name="button" id="button" value="JQ-&gt;DOM" onclick="showName()" />
+    <label>
+    <input type="button" name="button2" id="button2" value="DOM-&gt;JQ"  onclick="showname()"/>
+    </label>
+  </p>
+</form>
+</body>
+</html>

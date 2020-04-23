@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script text="text/javascript">
+        const OUT_OPACITY = 0.4;			//初始状态
+        const OVER_OPACITY = 1.0;			//完全显示
+        $(function() {
+            $("div#miniGallery img").css("opacity", OUT_OPACITY)	//设置透明度
+                .hover(								//使用复合事件
+                    function () {
+                        $(this).css({opacity:OVER_OPACITY});
+                    },
+                    function () {
+                        $(this).css({opacity:OUT_OPACITY});
+                    }
+                );
+            });
+    </script>
+</head>
+<body> 
+    <div id="miniGallery">
+        <img src="images/image1.jpg" width="200" />
+        <img src="images/image2.jpg" width="200" />
+        <img src="images/image3.jpg" width="200" />
+    </div> 
+</body>
+</html>

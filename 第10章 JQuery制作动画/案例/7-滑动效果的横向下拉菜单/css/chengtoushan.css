@@ -1,0 +1,349 @@
+@charset "utf-8";
+.w {
+	width: 971px;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+	overflow: hidden;
+}
+#top {
+	height: 160px;
+	width: 971px;
+}
+#top1 {
+	height: 28px;
+	width: 971px;
+	background-image: url(../images/a01.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+#top1 ul {
+	margin: 0px;
+	float: right;
+	list-style-type: none;
+}
+#top1 li {
+	height: 20px;
+	width: 60px;
+	float: left;
+	color: #FFFFFF;
+	font-family: "宋体";
+	font-size: 12px;
+	margin-top: 7px;
+	margin-left: 7px;
+	margin-right: 4px;
+	text-align: center;
+	line-height: 17px;
+}
+#top2 {
+	height: 128px;
+	width: 971px;
+	background-image: url(../images/a02.gif);
+	background-repeat: no-repeat;
+	background-position: 300px;
+}
+#top2 ul {
+	list-style-type: none;
+	margin: 0px;
+}
+
+#top2 li {
+	float: left;
+	margin-top: 6px;
+	margin-left: 5px;
+}
+#top1 a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#top1 a:hover {
+	color: #CC0000;
+}
+
+#menu {
+	background-image: url(../images/daohang.jpg);
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 971px;
+	background-position: 0px 0px;
+	font-family: "宋体";
+	font-size: 14px;
+	font-weight: bold;
+}
+#position {
+	height: 22px;
+	width: 963px;
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 22px;
+	padding-left: 8px;
+}
+#position a {
+	color: #000000;
+}
+#position a:hover {
+	color: #CC0000;
+	text-decoration: underline;
+}
+
+
+#content {
+	height: auto;
+	width: 971px;
+	margin-top: 3px;
+}
+#left {
+	height: 572px;
+	width: 190px;
+	float: left;
+}
+#left_1 {
+	width: 190px;
+	height: 260px;
+	background-image: url(../images/kuang3.jpg);
+	background-repeat: no-repeat;
+}
+#left_1 a {
+	color: #000000;
+}
+#left_1 a:hover {
+	color: #CC0000;
+}
+
+
+#left_1 ul {
+	margin: 0px;
+	padding-top: 55px;
+}
+#left_1 li {
+	font-family: "宋体";
+	font-size: 12px;
+	text-align: center;
+	height: 20px;
+	margin-bottom: 13px;
+	line-height: 20px;
+}
+
+#left_2 {
+	background-image: url(../images/kuang2.jpg);
+	background-repeat: no-repeat;
+	height: 130px;
+	width: 188px;
+	border: 1px solid #cbcbcd;
+	margin-top: 5px;
+}
+#left_2 ul {
+	margin-top: 40px;
+	margin-left: 15px;
+}
+#left_2 li {
+	font-family: "宋体";
+	font-size: 12px;
+	float: left;
+	width: 80px;
+	line-height: 22px;
+	height: 22px;
+}
+#left_3 {
+	height: 160px;
+	width: 188px;
+	margin-top: 5px;
+}
+#left_3 img {
+	border: 1px solid #CCCCCC;
+	margin-bottom: 1px;
+}
+
+#right {
+	float: right;
+	height: 572px;
+	width: 770px;
+}
+#right_1 {
+	height: 315px;
+	width: 765px;
+	margin-left: 5px;
+}
+/*幻灯片*/
+* {
+	padding:0;
+	margin:0;
+}
+ul {
+	list-style-type:none;
+}
+a {
+	text-decoration:none;
+	color:#c74201;
+}
+#slider {
+	width:524px;
+	height:304px;
+	background:#fff;
+	overflow:hidden;
+	position:relative;
+	float: left;
+}
+#slider img {
+	display:block;
+	width:524px;
+	height:304px;
+}
+#slider ul#show {
+	width:3550px;
+	height:300px;
+	position:absolute;
+}
+#slider ul#show li {
+	float:left;
+	cursor:pointer;
+}
+#number {
+	position:absolute;
+	bottom:10px;
+	right:0px;
+	text-align:center;
+	color:#FFFFFF;
+}
+#number li {
+	float:left;
+	width:20px;
+	height:20px;
+	margin-right:3px;
+	background-color: #83be10;
+}
+#number li.on {
+	color: #C74201;
+	line-height:20px;
+	width: 20px;
+	height: 20px;
+	font-size: 14px;
+	border:none;
+	background:#fff;
+	font-weight: bold;
+	cursor:pointer;
+}
+/*幻灯片*/
+
+
+#right_1_2 {
+	width: 226px;
+	height: 310px;
+	float: right;
+	border: 1px solid #cbcbcd;
+	background-image: url(../images/kuang1.jpg);
+	background-repeat: no-repeat;
+	font-family: "宋体";
+	font-size: 12px;
+}
+#right_1_2 ul {
+	padding-top: 40px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+#right_1_2 li {
+	height: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCCCCC;
+	line-height: 25px;
+}
+#tupian {
+	height: 145px;
+	width: 770px;
+	background-image: url(../images/kuang3.gif);
+	background-repeat: no-repeat;
+	background-position: 2px;
+	margin-top: 5px;
+}
+#tujian {
+	width: 20px;
+	height: 100px;
+	line-height: 20px;
+	font-family: "宋体";
+	font-size: 14px;
+	font-weight: bold;
+	color: #686363;
+	text-align: center;
+	margin-top: 5px;
+	padding-top: 25px;
+	float: left;
+	padding-left: 8px;
+}
+#www_qpsh_com1 img {
+	margin-top: 7px;
+}
+#www_qpsh_com {
+	font-family: "宋体";
+	font-size: 12px;
+	text-align: center;
+	line-height: 17px;
+}
+#www_qpsh_com img {
+	margin-top: 7px;
+	padding: 3px;
+	border: 1px solid #666666;
+}
+#www_qpsh_com a {
+	color: #333333;
+	text-decoration: none;
+}
+#www_qpsh_com a:hover {
+	color: #990000;
+}
+#right_3 {
+	width: 755px;
+	height: 100px;
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 17px;
+	margin-top: 5px;
+	background-color: #f4f1ec;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#right_3 img {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+#right_3 p {
+	    text-justify: inter-ideograph; 
+		text-align: justify; 
+}
+#right_3 span {
+	color: #CC0000;
+	float: right;
+	padding-right: 5px;
+}
+
+
+
+
+#link {
+	height: 118px;
+	width: 971px;
+	float: left;
+	font-family: "宋体";
+	font-size: 12px;
+}
+
+#link1 {
+	background-color: #f9f9f9;
+	text-align: center;
+	height: 55px;
+	width: 969px;
+	line-height: 25px;
+	border: 1px solid #cccccc;
+	margin-top: 5px;
+	padding-top: 10px;
+}
+#link2 {
+	height: 40px;
+	width: 971px;
+	background-color: #56ba1c;
+	line-height: 40px;
+	margin-top: 5px;
+	text-align: center;
+}

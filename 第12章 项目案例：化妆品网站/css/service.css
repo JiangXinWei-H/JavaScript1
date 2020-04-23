@@ -1,0 +1,128 @@
+#msg_win {
+	width:145px;
+	position:absolute;
+	right:0px;
+	overflow:hidden;
+	z-index:9999;
+	background:whiteSmoke;
+	font-size:12px;
+	margin:0px;
+}
+#msg_win .icos {
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:9;
+}
+#msg_win .icos a {
+	float:left;
+	cursor:pointer;
+	color:#666;
+	text-align:center;
+	font-weight:bold;
+	text-decoration:none;
+	font-family:webdings;
+	display:block;
+	line-height:12px;
+	padding-right:2px;
+}
+#msg_title {
+	color:#FFFFFF;
+	height:26px;
+	line-height:26px;
+	background:#3e3f40 url(../images/zhe.png) no-repeat right;
+	font-size:12px;
+	padding:0 10px;
+}
+#msg_content {
+	width:145px;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+#msg_content .service .hd {
+	background:#bf0000;
+	padding:4px 10px;
+}
+#msg_content .service .hd h3 {
+	font-size:18px;
+	color:#fff;
+	margin:0;
+}
+#msg_content .service .hd p {
+	font-size:11px;
+	color:#fff;
+	margin:0;
+}
+#msg_content .service_content li {
+	display:block;
+	border-bottom:1px #b1b1b1 dotted;
+	padding:5px 10px;
+}
+#msg_content .service_content .sp {
+	border-bottom:none;
+	padding-right:0;
+}
+#msg_content .top_head a {
+	display:block;
+	height:26px;
+	text-align:center;
+	background:#3e3f40 url(../images/top.png) no-repeat 10px;
+	color:#fff;
+	line-height:26px;
+	clear:both;
+}
+#bdshare {
+	margin:0 0 0 5px;
+}
+.service .service_content ul li .serv {
+	padding-top:3px;
+}
+.service .service_content ul li .serv a {
+	color:#747474;
+}
+.service_content ul li .serv a img {
+	float:left;
+	margin-right:4px;
+}
+.online {
+	background:url(../images/kefu-bg.png) no-repeat;
+	height:429px;
+	width:558px;
+	position:absolute;
+	z-index:20;
+	left:29.1%;
+	top:16.9%;
+}
+.online .o-main {
+	float:left;
+	height:429px;
+	width:558px;
+	position:relative;
+}
+.online .o-main .close-btn {
+	background:url(../images/close-btn.jpg) no-repeat;
+	height:15px;
+	width:14px;
+	position:absolute;
+	top:15px;
+	right:20px;
+	cursor:pointer;
+}
+.online .o-main .kf-btn {
+	height:37px;
+	width:151px;
+	position:absolute;
+	top:150px;
+	right:37px;
+}
+.online .o-main .o-write {
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#fff;
+	line-height:35px;
+	width:500px;
+	float:left;
+	padding-top:325px;
+	padding-left:20px;
+}

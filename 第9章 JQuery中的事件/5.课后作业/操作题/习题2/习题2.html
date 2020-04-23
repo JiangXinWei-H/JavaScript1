@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>应用jQuery的hover事件和CSS操作方法设计横向导航菜单</title>
+
+<link rel="stylesheet" type="text/css" href="css/public.css" />
+<link rel="stylesheet" type="text/css" href="css/thickbox.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+<div class="contain">
+  <div class="pagMenu">
+    <div class="menuMst">
+      <ul>
+        <li id="top1_index" class="on"><a id="top1_linkIndex" href="">首页</a> </li>
+        <li id="top1_mobile"><a id="top1_linkMobile" href="">手机</a> </li>
+        <li id="top1_fitting"><a id="top1_linkFitting" href="">配件</a> </li>
+        <li id="top1_benefit"><a id="top1_linkBenefit" href="">活动</a> </li>
+        <li><a href="" target="_blank">行业定制</a> </li>
+       </ul>
+     </div>
+    <div class="menuSub">
+      <h3 id="top1_menuSubTit">活动</h3>
+      <ul>
+        <li><a id="top1_HyperLink1" href="">周五巨献</a> </li>
+        <li><a id="top1_HyperLink2" href="">周三疯抢</a> </li>
+        <li><a id="top1_HyperLink3" href="">限时限量抢购</a> </li>
+        <li><a id="top1_HyperLink4" href="">清仓特惠</a> </li>
+        <li><a id="top1_HyperLink5" href="">优惠套餐</a> </li>
+        <li><a id="top1_HyperLink6" href="">积分换购</a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $("#top1_benefit").hover(
+	function(){
+		var offset = $(this).offset();
+		var intLft = offset.left;
+		var intTop = offset.top;
+		$(".menuSub").css({"left":intLft,"top":intTop});
+		$(".menuSub").show();
+	}
+  );
+  $(".menuSub").hover(function(){},function(){$(this).hide();});
+</script>
+</body>
+</html>

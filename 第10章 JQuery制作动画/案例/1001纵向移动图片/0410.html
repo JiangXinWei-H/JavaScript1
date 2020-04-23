@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="page-Enter" content="revealTrans(Duration=0.5,Transition=12)"/>
+<meta http-equiv="page-Exit" content="revealTrans(Duration=0.5,Transition=12)"/>
+<title>jQuery实现的纵向移动的焦点图片轮换</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css" />
+<link href="css/slider.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+   var len  = $("#number > li").length;
+   var index = 0;
+   var adTimer;
+   $("#number li").mouseover(function(){
+	  index = $("#number li").index(this);
+	  showImg(index);
+   }).eq(0).mouseover();	
+   //滑入停止动画，滑出开始动画.
+   $('#slider').hover(function(){
+	   clearInterval(adTimer);
+	 },function(){
+	   adTimer = setInterval(function(){
+		  showImg(index);
+		  index++;
+		  if(index==len){index=0;}
+		} , 3000);
+   }).trigger("mouseleave");
+})
+// 通过控制top ，来显示不同的幻灯片
+function showImg(index){
+  var sliderHeight = $("#slider").height();
+  $("#show").stop(true,false).animate({top : -sliderHeight*index},1000);
+  $("#number li").removeClass("on").eq(index).addClass("on");
+}
+/*function showImg(index){
+  var sliderWidth = $("#slider").width();
+  $("#show").stop(true,false).animate({left : -sliderWidth*index},800);
+  $("#number li").removeClass("on")
+	  .eq(index).addClass("on");
+}*/
+</script>
+</head>
+<body>
+<div id="slider">
+  <ul id="show">
+    <li><img src="images/1.jpg" alt="1" /></li>
+    <li><img src="images/2.jpg" alt="2" /></li>
+    <li><img src="images/3.jpg" alt="3" /></li>
+    <li><img src="images/4.jpg" alt="4" /></li>
+  </ul>
+  <ul id="number">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+  </ul>
+</div>
+</body>
+</html>

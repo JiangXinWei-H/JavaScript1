@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>微博字数统计</title>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script language="javascript">
+$(document).ready(function(){
+    var text=$("#edit_myfrom textarea").val();	//获取文本域内容
+    var counter=text.length;					//获取文本域内容长度
+    $("#numtj var").text(100-counter);			//提示还能输入多少字符s
+    $(document).keyup(function() {				//按键弹起时触发
+        var text=$("#edit_myfrom textarea").val();	//重新获取文本域内容
+        var counter=text.length;					//重新获取文本域内容长度
+		if(counter>=100)							
+		{
+			$("#numtj var").text("对不起，输入的字符超长了！");//文本域长度大于100时提示
+			$("#edit_myfrom textarea").attr("readonly",true);//设置文本域为只读
+		}
+		else
+        	$("#numtj var").text(100-counter);
+    });
+});
+</script>
+<style type="text/css">
+.textColor{color:#C00;}
+.input{height:60px; width:400px}
+</style>
+</head>
+
+<body>
+<div id="edit_myfrom">
+   <form action="" method="post">
+           <p id="numtj">你还可以输入<var class="textColor"></var>个字符。</p>
+        <p class="textinput"><label><textarea name="" cols="" rows="" maxlength="110" class="input"></textarea></label></p>
+   </form>
+</div>
+</body>
+</html>

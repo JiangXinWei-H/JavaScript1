@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>设置获取颜色</title>
+<style type="text/css">
+div{
+	color:#33C;
+	background:#FFC;
+	width:100px;
+	height:100px;
+}
+</style>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js">
+</script>
+<script type="text/javascript">
+;(function($){  
+    $.fn.extend({  
+        color:function(value){  
+            return this.css("color",value);  
+        }  
+    });  
+})(jQuery) 
+
+function showColor()
+{
+	$("div").color("red");  
+}
+
+</script>
+</head>
+
+<body>
+<div onclick="showColor()">测试文字</div>
+</body>
+</html>

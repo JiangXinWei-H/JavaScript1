@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<script src="js/jquery-1.11.1.min.js"></script>
+<title>11-3 自定义选择器 </title>
+<script type="text/javascript">
+//使用 noConflict() 方法为 jQuery 变量规定新的名称：
+var $j = jQuery.noConflict();
+
+$j(function(){
+  $j('.div').hide()
+})
+</script>
+</head>
+<body>
+<div class="div">  自定义选择器</div>
+</body>
+</html>
